@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+   
+        .a{
+            background-color:rgb(0, 217, 255);
+            width:auto;
+            height:300px;
+
+        }
+        .b{
+            background-color:rgb(43, 255, 0);
+            width:auto;
+            height:330px;
+            
+        }
+        .c{
+            background-color: gray;
+            height: 800px;
+            width: auto;
+        }
+
+        .line{
+            font-size: 50px;
+             color: white;
+              text-align: center;
+              
+               
+        }
+        .car2{
+           
+            width:300px;
+            height:200px;
+            animation:moveright 5s forwards infinite;
+           padding: 50px;
+           animation-delay: 4s;
+
+       
+        
+        }
+        @keyframes moveright{
+            0% {
+                transform:translateX(0px);
+            }
+            100%{
+                    transform:translateX(3440px);
+            }
+        }
+        .car1{
+        float:right;
+        width:300px;
+        height:200px;
+        animation:moveleft 5s forwards infinite;
+        animation-delay: 2s;
+        padding-left: 850px ;
+        margin-bottom: 1000px;
+        }
+
+        @keyframes moveleft{
+            0% {
+                transform:translate(0px);
+                }
+                100%{
+                    transform:translate(-3000px);
+                }
+
+        }
+      
+    </style>
+   <body>
+    
+<div class="a"></div>
+<div class="b"></div>
+<div class="c">
+<img src="./car2.jpg" class="car2">
+<h1 class="line">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</h1>
+
+    <img class="car1" src="./car1.jpg">
+</div>
+
+   
+</body>
+</html>

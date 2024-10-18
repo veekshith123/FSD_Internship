@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Birthday Card</title>
+        <style>
+            body{
+                background-color: antiquewhite;
+                background-image: url("pinktree.png");
+                background-repeat: no-repeat;
+                background-size: 300px;
+                background-attachment: fixed;   
+            }
+            .heading{
+                display: flex;
+                justify-content: center;
+                margin-left: 370px;
+                border: 5px double black;
+                margin-right: 450px;
+                border-left-style: solid  ;
+                border-left-color: darkblue;
+                border-right-style: solid;
+                border-right-color: darkblue;
+                text-shadow: 2px 0 black;
+
+            }
+
+            .Birthdaypic{
+                margin-left: 330px;
+                width: 500px;
+                height: auto;
+
+            }
+            h2{
+                display: flex;
+                justify-content: center;
+                border: 4px solid white;
+                background-color: aliceblue;
+                margin-left: 400px;
+                margin-right: 500px;
+               
+
+            }
+            #hall{
+                margin-left: 330px;
+                width: 500px;
+                height: auto;
+            }
+            #lastline{
+                display: flex;
+                justify-content: center;
+                background-color: rgb(50, 50, 50);
+                margin-bottom: -30px;
+                margin-left: -20px;
+                margin-right: -20px;
+            }
+            .food{
+                padding-left: 10px;
+                border: 5px double black;
+                margin-right: 1000px;
+                text-shadow: 1.5px 0 black;
+            }
+            .foodie{
+                border: 5px double black;
+                margin-right: 1000px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="heading" style="color:Red; font-size: 40px;">Birthday Invitation</h1>
+        <img class="Birthdaypic" src="./happy-birthday.jpg" alt="fig1: Birthday"> <br><br><br>
+        <a href="https://www.google.com/maps/place/Mahatma+Gandhi+Rd,+Bengaluru,+Karnataka/@12.9747306,77.6069128,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1687393dbc13:0x8b70c8e652b73d9e!8m2!3d12.9747306!4d77.6094877!16zL20vMGIzMDAz?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D" target=" "><h2>Birthday Hall Location</h2> </a> <br><br><br>
+        <img id="hall" src="./17814-1528721896-wm-octave-mg-road-1.jpg" alt="fig2: Location pic"> <br><br>
+        <h1 class="food" style=" color:red; font-size: 40px"> Food Menu:</h1>
+        <div class="foodie">
+            <h3>Appetizer Ideas</h3>
+        <ul>
+            <li> Samosas </li>
+            <li> Spicy Bombay Potatoes. </li>
+            <li> Kala Chana Chaat. </li>    
+            <li> Khaman or Rava Dhokla. </li>
+        </ul>
+        <h3>Non veg</h3>
+        <ul>
+            <li>Grilled Chicken Skewers</li>
+            <li>  Buffalo Chicken Wings</li>
+            <li> Fish Tacos</li>
+            <li>  Crispy Fried Fish Bites</li>
+            <li> Lemon Garlic Butter Chicken</li>
+        </ul>
+        <h3>Juices</h3>
+        <ul>
+            <li>Orange Juice</li>
+            <li> Pineapple Juice</li>
+            <li> Mango Juice</li>
+            <li>  Watermelon Juice</li>
+            <li>Lemon Mint Juice</li>
+        </ul>
+    </div>
+        <br>
+        <fieldset id="size">
+            <input type="radio" name="size" value="20"> 20-Person
+            <input type="radio" name="size" value="40" > 40-Person
+            <input type="radio" name="size" value="60" checked> 60-Person
+            <input type="number" name="size" value="custom" placeholder="enter number of people" minlength="20" maxlength="60">
+        </fieldset>
+<br>
+        <input type="text" id="comment" placeholder="Comment if any queries">
+        <button onclick="submitComment()">Submit</button>
+    
+        <!-- Area where the comment will appear -->
+        <p id="output"></p>
+    
+        <script>
+            function submitComment() {
+                // Get the input value
+                var comment = document.getElementById("comment").value;
+    
+                // Display the comment in the output paragraph
+                document.getElementById("output").innerHTML = comment;
+    
+                // Clear the input field after submission
+                document.getElementById("comment").value = "";
+            }
+        </script>
+        <footer  id="lastline" style="color:whitesmoke; font-size: 24px;">Invited by Veekshith and Family</footer>
+
+
+    </body>
+    
+</html>
